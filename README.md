@@ -1,4 +1,4 @@
-# Buscador de Actividades Deportivas (Sports Activity Search - Web Application)
+# Buscador de Actividades Deportivas
 
 A JEE web application built with Servlets and JSPs for searching and managing sporting activities at Universidad Carlos III de Madrid. Developed as Part II of the *Diseño de Aplicaciones Telemáticas* practice.
 
