@@ -101,7 +101,7 @@ Seven search operations available to authenticated clients:
 - **5.2 (XSS Prevention):** All user input is sanitized with `StringEscapeUtils.escapeHtml4()` from commons-text via the `InputValidator` utility class
 - **5.3 (Password Hashing):** Passwords are hashed with SHA-256 + pepper `"DATJEE"` before storage and comparison (implemented in `SecurityUtils.java`). The PASSWD column is `VARCHAR(64)` to hold the hex hash.
 
-## Reuse from Previous Practice (gestor-deportivo)
+## Reuse from [gestor-deportivo](https://github.com/dalouc/gestor-deportivo)
 
 The following components were **reused and adapted** from the text-based gestor-deportivo application:
 
