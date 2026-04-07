@@ -5,7 +5,7 @@ A JEE web application built with Servlets and JSPs for searching and managing sp
 ## Project Structure
 
 ```
-buscador_deportivo/
+buscador-deportivo/
 ├── index.jsp                                   # Initial page (Register / Log In)
 ├── css/
 │   └── style.css                               # Application stylesheet
