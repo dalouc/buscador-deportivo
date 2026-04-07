@@ -1,0 +1,284 @@
+/* ==========================================================================
+   Sporting Activities Search Application - Stylesheet
+   Universidad Carlos III de Madrid
+   ========================================================================== */
+
+/* General layout */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    min-height: 80vh;
+}
+
+/* Header / Banner */
+.banner {
+    background-color: #003366;
+    color: #fff;
+    padding: 15px 20px;
+    text-align: center;
+}
+
+.banner h1 {
+    margin: 0;
+    font-size: 1.4em;
+    color: #fff;
+}
+
+.banner .subtitle {
+    font-size: 0.85em;
+    margin-top: 5px;
+}
+
+/* Navigation / User info bar */
+.user-bar {
+    background-color: #e8e8e8;
+    padding: 8px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.9em;
+}
+
+.user-bar a {
+    color: #c00;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.user-bar a:hover {
+    text-decoration: underline;
+}
+
+/* Headings */
+h1 { font-size: 1.4em; color: #003366; }
+h2 { font-size: 1.2em; color: #003366; margin-top: 25px; }
+
+/* Links */
+a { color: #003366; }
+a:hover { color: #0066cc; }
+
+/* Forms */
+form {
+    margin: 15px 0;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 0.9em;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="number"],
+select,
+textarea {
+    width: 100%;
+    max-width: 400px;
+    padding: 8px;
+    margin-top: 4px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+    font-size: 0.95em;
+}
+
+select {
+    max-width: 420px;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 8px 20px;
+    margin: 5px 5px 5px 0;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 0.95em;
+    text-decoration: none;
+}
+
+.btn-primary {
+    background-color: #003366;
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background-color: #004c99;
+}
+
+.btn-secondary {
+    background-color: #666;
+    color: #fff;
+}
+
+.btn-secondary:hover {
+    background-color: #888;
+}
+
+.btn-danger {
+    background-color: #c00;
+    color: #fff;
+}
+
+.btn-danger:hover {
+    background-color: #e00;
+}
+
+.btn-success {
+    background-color: #2a7d2a;
+    color: #fff;
+}
+
+.btn-success:hover {
+    background-color: #3a9d3a;
+}
+
+input[type="submit"],
+input[type="reset"] {
+    padding: 8px 20px;
+    margin: 5px 5px 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 0.95em;
+}
+
+input[type="submit"] {
+    background-color: #003366;
+    color: #fff;
+    border-color: #003366;
+}
+
+input[type="submit"]:hover {
+    background-color: #004c99;
+}
+
+input[type="reset"] {
+    background-color: #eee;
+}
+
+/* Tables */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 15px 0;
+    font-size: 0.9em;
+}
+
+table th, table td {
+    padding: 8px 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+table th {
+    background-color: #003366;
+    color: #fff;
+    font-weight: bold;
+}
+
+table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+table tr:hover {
+    background-color: #eef3fa;
+}
+
+/* Messages */
+.message {
+    padding: 10px 15px;
+    margin: 15px 0;
+    border-radius: 3px;
+    font-size: 0.95em;
+}
+
+.message-error {
+    background-color: #fdd;
+    border: 1px solid #c00;
+    color: #900;
+}
+
+.message-success {
+    background-color: #dfd;
+    border: 1px solid #2a7d2a;
+    color: #260;
+}
+
+.message-info {
+    background-color: #def;
+    border: 1px solid #369;
+    color: #036;
+}
+
+/* Option cards (initial page) */
+.options {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.option-card {
+    flex: 1;
+    min-width: 200px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    background-color: #fafafa;
+}
+
+.option-card:hover {
+    border-color: #003366;
+    background-color: #f0f4fa;
+}
+
+.option-card h2 {
+    margin-top: 0;
+}
+
+/* Confirmation data display */
+.data-summary {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    margin: 15px 0;
+}
+
+.data-summary p {
+    margin: 5px 0;
+}
+
+.data-summary strong {
+    display: inline-block;
+    width: 120px;
+}
+
+/* Footer / Copyright */
+.footer {
+    text-align: center;
+    padding: 15px;
+    font-size: 0.8em;
+    color: #666;
+    border-top: 1px solid #ddd;
+    margin-top: 30px;
+}
+
+.footer a {
+    color: #666;
+}

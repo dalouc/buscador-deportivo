@@ -1,0 +1,93 @@
+# ============================================================================
+# .gitignore - Sporting Activities Search Web Application
+# Java / Tomcat / JEE
+# ============================================================================
+
+# Compiled Java classes
+*.class
+
+# Build output directories
+bin/
+build/
+out/
+target/
+dist/
+
+# JAR / WAR / EAR packages (generated)
+*.jar
+*.war
+*.ear
+
+# Keep library JARs that are part of the project
+!WEB-INF/lib/*.jar
+
+# ============================================================================
+# IDE Configuration
+# ============================================================================
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+
+# Eclipse
+.project
+.classpath
+.settings/
+.metadata/
+
+# VS Code
+.vscode/
+
+# NetBeans
+nbproject/private/
+nbbuild/
+nbdist/
+.nb-gradle/
+
+# ============================================================================
+# Operating System Files
+# ============================================================================
+
+# macOS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+
+# Windows
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# Linux
+*~
+*.swp
+*.swo
+
+# ============================================================================
+# Logs and Temp Files
+# ============================================================================
+*.log
+*.tmp
+*.temp
+*.bak
+*.backup
+logs/
+
+# ============================================================================
+# Environment / Local Configuration
+# ============================================================================
+.env
+.env.local
+*.local
+
+# ============================================================================
+# Archives (generated)
+# ============================================================================
+*.zip
+*.tar.gz
+*.rar
+*.7z

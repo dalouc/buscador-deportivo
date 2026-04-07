@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+                             http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+         version="3.0">
+
+    <display-name>Sporting Activities Search Application</display-name>
+
+    <!-- Client search servlet -->
+    <servlet>
+        <servlet-name>SearchServlet</servlet-name>
+        <servlet-class>activities.control.SearchServlet</servlet-class>
+    </servlet>
+
+    <!-- Client registration servlet -->
+    <servlet>
+        <servlet-name>RegisterServlet</servlet-name>
+        <servlet-class>activities.control.RegisterServlet</servlet-class>
+    </servlet>
+
+    <!-- Client login servlet -->
+    <servlet>
+        <servlet-name>LoginServlet</servlet-name>
+        <servlet-class>activities.control.LoginServlet</servlet-class>
+    </servlet>
+
+    <!-- Client logout servlet -->
+    <servlet>
+        <servlet-name>LogoutServlet</servlet-name>
+        <servlet-class>activities.control.LogoutServlet</servlet-class>
+    </servlet>
+
+    <!-- Manager login servlet -->
+    <servlet>
+        <servlet-name>ManagerLoginServlet</servlet-name>
+        <servlet-class>activities.control.ManagerLoginServlet</servlet-class>
+    </servlet>
+
+    <!-- Manager redirect servlet: dispatches /manager to login or dashboard -->
+    <servlet>
+        <servlet-name>ManagerRedirectServlet</servlet-name>
+        <servlet-class>activities.control.ManagerRedirectServlet</servlet-class>
+    </servlet>
+
+    <!-- Manager operations servlet -->
+    <servlet>
+        <servlet-name>ManagerServlet</servlet-name>
+        <servlet-class>activities.control.ManagerServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>SearchServlet</servlet-name>
+        <url-pattern>/search</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>RegisterServlet</servlet-name>
+        <url-pattern>/register</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>LoginServlet</servlet-name>
+        <url-pattern>/login</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>LogoutServlet</servlet-name>
+        <url-pattern>/logout</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>ManagerRedirectServlet</servlet-name>
+        <url-pattern>/manager</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>ManagerLoginServlet</servlet-name>
+        <url-pattern>/manager/login</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>ManagerServlet</servlet-name>
+        <url-pattern>/manager/dashboard</url-pattern>
+    </servlet-mapping>
+
+    <!-- Filter to protect search pages: requires client session -->
+    <filter>
+        <filter-name>AuthFilter</filter-name>
+        <filter-class>activities.control.AuthFilter</filter-class>
+    </filter>
+
+    <filter-mapping>
+        <filter-name>AuthFilter</filter-name>
+        <url-pattern>/search</url-pattern>
+    </filter-mapping>
+
+    <!-- Filter to protect manager pages: requires manager session -->
+    <filter>
+        <filter-name>ManagerAuthFilter</filter-name>
+        <filter-class>activities.control.ManagerAuthFilter</filter-class>
+    </filter>
+
+    <filter-mapping>
+        <filter-name>ManagerAuthFilter</filter-name>
+        <url-pattern>/manager/dashboard</url-pattern>
+    </filter-mapping>
+    <session-config>
+        <session-timeout>30</session-timeout>
+    </session-config>
+    
+    <welcome-file-list>
+        <welcome-file>index.jsp</welcome-file>
+    </welcome-file-list>
+
+</web-app>
