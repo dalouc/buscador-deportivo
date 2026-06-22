@@ -1,4 +1,4 @@
-# Buscador de Actividades Deportivas
+# Sport Activities Searcher
 
 A JEE web application built with Servlets and JSPs for searching and managing sporting activities.
 
